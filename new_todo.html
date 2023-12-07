@@ -10,10 +10,12 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Customs CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 <header>
     <!--Start of my navigation-->
@@ -36,7 +38,46 @@
 </div>
 <!--End of my Header-->
 <body>
-   
+    <br>
+    <br>
+
+    <h1 id="headline">Add To Do Task</h1>
+    <br>
+
+    <form id="todoForm">
+        <label for="userName">Select User:</label>
+        <select id="userName" name="userName">
+            <!-- User names will be populated dynamically from the API -->
+        </select>
+        <br>
+        <br>
+
+        <label for="category">Select Category:</label>
+        <select id="category" name="category">
+            <!-- Category names will be populated dynamically from the API -->
+        </select>
+        <br>
+        <br>
+        <label for="urgency">Select Urgency:</label>
+        <select id="urgency" name="urgency">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br>
+        <br>
+    
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <label for="deadline">Deadline (YYYY-MM-DD):</label>
+        <input type="text" id="deadline" name="deadline" placeholder="Enter deadline">
+        <br>
+        <br>
+    
+        <button type="button" onclick="submitToDo()">Add ToDo</button>
+    </form>
 
 
 

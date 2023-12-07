@@ -35,15 +35,18 @@
 </header>
 </div>
 <!--End of my Header-->
-<body>
-    <br>
+<body id="todo-main">
+<br>
+<br>
+<h2>Select User</h2>
+<br>
+<br>
      <!-- Dropdown list for users -->
         <div id="dropZown">
         <label for="userDropdown">Select a User:</label>
-        <select id="userDropdown" onchange="getUserTasks()">
+        <select id="userDropdown" onchange="createUserDropdown()">
             <option value="" disabled selected>Select User</option>
-            <option value="1">User 1</option>
-            <option value="2">User 2</option>
+            
             <!-- Add more options as needed -->
         </select>
     
